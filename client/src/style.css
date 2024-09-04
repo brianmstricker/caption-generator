@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
- @apply min-h-screen bg-indigo-500 text-white;
+ @apply min-h-screen text-white font-main antialiased bg-indigo-600 relative before:absolute before:inset-0 before:bg-orange-600/20 before:-z-10;
 }
