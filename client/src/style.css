@@ -19,7 +19,7 @@ a:not([aria-current="page"]):not(#brand) {
 }
 
 a[aria-current="page"] {
- @apply text-neutral-300 font-medium;
+ @apply text-orange-500;
 }
 
 a:focus-visible,
