@@ -6,7 +6,7 @@ import { FaClosedCaptioning } from "vue3-icons/fa";
 </script>
 
 <template>
- <nav class="shadow">
+ <nav class="shadow shadow-white/5">
   <div class="container flex justify-between items-center py-5">
    <router-link
     to="/"

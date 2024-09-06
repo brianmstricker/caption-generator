@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 body {
- @apply min-h-screen flex flex-col text-white font-main antialiased bg-blue-600 relative before:absolute before:inset-0 before:bg-orange-400/25 before:-z-10;
+ background: radial-gradient(at center, rgb(4, 50, 214), rgba(5, 12, 27, 0.8));
+ @apply min-h-screen flex flex-col text-white font-main antialiased bg-blue-800;
 }
+
+/* body {
+ @apply min-h-screen flex flex-col text-white font-main antialiased bg-blue-600 relative before:absolute before:inset-0 before:bg-orange-400/25 before:-z-10;
+} */
 
 #app {
  @apply flex-1 flex flex-col;
@@ -25,4 +30,17 @@ a[aria-current="page"] {
 a:focus-visible,
 button:focus-visible {
  @apply outline-white outline outline-1;
+}
+
+#upload-card:has(#upload-card-button:hover) {
+ animation: glow 1s infinite alternate 10ms;
+}
+
+@keyframes glow {
+ 0% {
+  box-shadow: 0 0 12px -2px rgba(255, 165, 0, 1);
+ }
+ 100% {
+  box-shadow: 0 0 32px -2px rgba(255, 165, 0, 1);
+ }
 }

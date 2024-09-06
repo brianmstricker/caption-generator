@@ -18,23 +18,7 @@ import { FaArrowRight } from "vue3-icons/fa";
    <div
     class="h-[50vh] sm:h-[60vh] min-h-[200px] sm:min-h-[240px] w-[180px] md:w-[260px] bg-black/20 rounded-xl flex items-center justify-center"
    >
-    <button
-     class="bg-orange-500 px-4 py-2 rounded-full md:text-xl font-semibold"
-     aria-label="Upload video"
-     v-motion
-     :initial="{ opacity: 0, y: 100, scale: 0.5, boxShadow: 'none' }"
-     :enter="{
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transitionDuration: '170ms',
-      boxShadow: 'none',
-     }"
-     :tapped="{ scale: 0.9, transitionDuration: '50ms' }"
-     :hovered="{ scale: 1.05, transitionDuration: '50ms', boxShadow: '0 0 16px 0 rgba(255, 255, 255, 0.2)' }"
-    >
-     Upload video
-    </button>
+    <button class="bg-orange-500 px-4 py-2 rounded-full md:text-xl font-semibold" aria-label="Upload video">Upload video</button>
    </div>
    <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 hidden sm:block">
     <FaArrowRight size="44" />
