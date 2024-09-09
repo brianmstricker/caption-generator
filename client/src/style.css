@@ -20,7 +20,7 @@ a {
 }
 
 a:not([aria-current="page"]):not(#brand) {
- @apply hover:text-neutral-200;
+ @apply hover:text-neutral-300;
 }
 
 a[aria-current="page"] {
@@ -33,14 +33,27 @@ button:focus-visible {
 }
 
 #upload-card:has(#upload-card-button:hover) {
- animation: glow 1s infinite alternate 10ms;
+ animation: glow 2s infinite alternate 10ms;
 }
 
 @keyframes glow {
  0% {
-  box-shadow: 0 0 12px -2px rgba(255, 165, 0, 1);
+  box-shadow: 0 0 4px -2px rgba(255, 165, 0, 1);
  }
  100% {
-  box-shadow: 0 0 32px -2px rgba(255, 165, 0, 1);
+  box-shadow: 0 0 24px -2px rgba(255, 165, 0, 1);
  }
+}
+
+@keyframes slide {
+ 0% {
+  transform: translateY(100%);
+ }
+ 100% {
+  transform: translateY(0);
+ }
+}
+
+.slide {
+ animation: slide 0.5s ease-out forwards;
 }
