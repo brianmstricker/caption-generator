@@ -3,3 +3,7 @@
 _amazon transcribe or <https://platform.openai.com/docs/guides/speech-to-text>
 _<https://docs.uploadthing.com/backend-adapters/express> for files
 -setup font
+
+<https://github.com/pingdotgg/uploadthing/blob/Mr0Bread/nuxt-support/examples/backend-adapters/client-vue/src/App.vue>
+<https://docs.uploadthing.com/api-reference/react>
+<https://docs.uploadthing.com/api-reference/server#createroutehandler>
