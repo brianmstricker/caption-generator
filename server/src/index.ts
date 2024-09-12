@@ -1,10 +1,9 @@
+import "dotenv/config";
 import express from "express";
-import dotenv from "dotenv";
 import { createRouteHandler } from "uploadthing/express";
 import { uploadRouter } from "./utils/uploadthing.js";
 import cors from "cors";
 import upload from "./routes/upload.js";
-dotenv.config();
 
 const app = express();
 app.use(
