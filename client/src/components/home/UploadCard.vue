@@ -38,9 +38,7 @@ const uploadVideo = async (e: Event) => {
     aria-label="Upload video"
     for="upload-card-input"
     tabindex="0"
-    onkeydown="
-    if(!$event) return;
-    if($event.key === 'Enter') $refs.fileInput.click()"
+    onkeydown="if(event.key === 'Enter') this.click()"
    >
     <span v-if="isUploading">Uploading...</span>
     <span v-else-if="uploadedFile">Uploaded</span>
